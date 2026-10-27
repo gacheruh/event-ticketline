@@ -1,0 +1,6 @@
+{
+  "size": {
+    "space": { "sm": { "value": "8px", "type": "dimension" }, "md": { "value": "16px", "type": "dimension" }, "lg": { "value": "24px", "type": "dimension" }, "xl": { "value": "40px", "type": "dimension" } },
+    "radius": { "control": { "value": "6px", "type": "dimension" } }
+  }
+}

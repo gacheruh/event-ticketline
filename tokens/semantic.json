@@ -1,0 +1,8 @@
+{
+  "color": {
+    "surface": { "canvas": { "value": "{color.paper}", "type": "color" }, "subtle": { "value": "{color.sand}", "type": "color" } },
+    "text": { "primary": { "value": "{color.ink}", "type": "color" }, "inverse": { "value": "#ffffff", "type": "color" } },
+    "action": { "primary": { "value": "{color.orange}", "type": "color" } },
+    "status": { "success": { "value": "{color.green}", "type": "color" }, "danger": { "value": "{color.red}", "type": "color" } }
+  }
+}

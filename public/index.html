@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A reliable event ticketing operations console." />
+    <title>Ticketline — capacity you can trust</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="topbar"><a class="brand" href="/">TICKETLINE<span>·</span></a><p>Event operations console</p><span class="live">System live</span></header>
+    <main id="main" class="shell">
+      <section class="masthead" aria-labelledby="page-title">
+        <div><p class="eyebrow">Inventory, orders, confirmation</p><h1 id="page-title">Capacity you can trust.</h1><p class="lede">Create the event, set the allocation, then let the queue handle confirmations.</p></div>
+        <div class="gauge" aria-label="Ticket availability is tracked atomically"><span>LIVE<br>COUNT</span><i></i><b>01</b></div>
+      </section>
+      <section class="workspace" aria-label="Event operations">
+        <aside class="setup-panel"><h2>Set up an event</h2><form id="event-form"><label>Event title<input name="title" required placeholder="Nairobi Design Night" /></label><label>Venue<input name="venue" required placeholder="The Alchemist" /></label><label>Starts at<input name="startsAt" type="datetime-local" required /></label><button type="submit">Create event</button></form><div id="ticket-type-wrap" hidden><h3>Add a ticket type</h3><form id="ticket-form"><label>Event<select name="eventId" id="ticket-event" required></select></label><label>Ticket name<input name="name" required placeholder="Early bird" /></label><div class="two-up"><label>Price (KES)<input name="price" type="number" min="0" required /></label><label>Capacity<input name="quantityAvailable" type="number" min="0" required /></label></div><button type="submit">Add allocation</button></form></div></aside>
+        <section class="events-panel" aria-labelledby="events-heading"><div class="section-heading"><div><p class="eyebrow">Active inventory</p><h2 id="events-heading">Your events</h2></div><button class="text-button" id="refresh" type="button">Refresh</button></div><div id="events" class="event-list" aria-live="polite"><p class="empty">No events yet. Create one to start selling.</p></div></section>
+      </section>
+      <section class="purchase" data-nsd-interaction="availability-picker" aria-labelledby="purchase-heading"><div><p class="eyebrow">Buyer flow · proposed demo</p><h2 id="purchase-heading">Check availability, then confirm.</h2><p>Sample purchase flow. Payments are not processed in this build.</p></div><form id="purchase-form"><label>Ticket<select id="purchase-ticket" name="ticketTypeId" required><option value="">Choose a ticket type</option></select></label><label>Quantity<input id="purchase-quantity" name="quantity" type="number" min="1" value="1" required /></label><label>Name<input name="buyerName" required autocomplete="name" /></label><label>Email<input name="buyerEmail" type="email" required autocomplete="email" /></label><output id="estimate" aria-live="polite">Choose a ticket type to see the total.</output><button type="submit">Confirm sample order</button></form></section>
+      <p id="notice" class="notice" role="status" aria-live="polite"></p>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

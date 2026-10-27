@@ -1,0 +1,4 @@
+# foreground background
+#1f211d #f7f5ef
+#ffffff #be3d16
+#1f211d #e8e3d8

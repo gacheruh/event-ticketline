@@ -1,0 +1,10 @@
+{
+  "color": {
+    "ink": { "value": "#1f211d", "type": "color" },
+    "paper": { "value": "#f7f5ef", "type": "color" },
+    "sand": { "value": "#e8e3d8", "type": "color" },
+    "orange": { "value": "#be3d16", "type": "color" },
+    "green": { "value": "#246a45", "type": "color" },
+    "red": { "value": "#aa2e25", "type": "color" }
+  }
+}
